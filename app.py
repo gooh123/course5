@@ -1,6 +1,4 @@
-from urllib import request
-
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request
 from werkzeug.utils import redirect
 
 from base import Arena
@@ -14,7 +12,7 @@ heroes = {}
 
 arena = Arena()
 
-equipment = Equipment
+equipment = Equipment()
 
 
 @app.route("/")
